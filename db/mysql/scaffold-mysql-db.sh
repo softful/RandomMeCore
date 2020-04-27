@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+dotnet ef dbcontext scaffold "server=localhost;Database=users;Uid=user;Pwd=simplepwd" Pomelo.EntityFrameworkCore.MySql --project ..\..\src\RandomMeCore.Core\RandomMeCore.Core.csproj --startup-project ..\..\src\RandomMeCore.Api\RandomMeCore.Api.csproj --output-dir Models --context UsersContext --context-dir ./ --data-annotations --verbose
